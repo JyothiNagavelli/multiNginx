@@ -4,8 +4,8 @@ kind: HelmRelease
 metadata:
   name: nginx
   namespace: flux-system
+replicaCount: 2
 spec:
-  replicaCount: 2
   chart:
     spec:
       chart: nginx
