@@ -4,7 +4,6 @@ kind: HelmRelease
 metadata:
   name: nginx
   namespace: flux-system
-replicaCount: 2
 spec:
   chart:
     spec:
@@ -15,6 +14,7 @@ spec:
   interval: 1m0s
   releaseName: nginx
   values:
+    replicaCount: 2
     extraEnvVars:
       - name: FOO
         value: BAR  
