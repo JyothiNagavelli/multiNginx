@@ -5,9 +5,9 @@ metadata:
   name: nginx
   namespace: flux-system
 spec:
+  replicaCount: 2
   chart:
     spec:
-      replicaCount: 2
       chart: nginx
       sourceRef:
         kind: HelmRepository
