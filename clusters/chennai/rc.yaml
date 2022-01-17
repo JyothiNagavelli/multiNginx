@@ -5,6 +5,9 @@ metadata:
   name: nginx
   namespace: flux-system
 spec:
+  chart:
+    spec:
+     chart: nginx
   releaseName: nginx
   values:
     replicaCount: 2
